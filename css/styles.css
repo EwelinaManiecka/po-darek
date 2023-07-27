@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 251, 218);
+  background-color: rgba(253, 250, 227, 0.619);
   font-family: "Crimson Pro", serif;
 }
 
 .navbar {
-  background-color: rgb(255, 251, 218);
+  background-color: rgba(253, 250, 227, 0.619);
   font-size: 30px;
 }
 .navbar .navbar-brand {
@@ -22,12 +22,16 @@
   font-size: 30px;
 }
 .navbar .navbar-brand .logo-text .span-text {
-  color: rgb(244, 82, 37);
+  color: rgb(230, 5, 5);
   font-weight: 700;
 }
 
 .button-color {
-  background-image: linear-gradient(-60deg, rgb(244, 82, 37) 0%, rgb(249, 212, 35) 100%);
+  background-image: linear-gradient(135deg, rgb(253, 216, 25) 10%, rgb(230, 5, 5) 100%);
   width: 300px;
   height: 400px;
+}
+
+.section-color {
+  background: rgba(253, 215, 25, 0.36);
 }/*# sourceMappingURL=styles.css.map */
