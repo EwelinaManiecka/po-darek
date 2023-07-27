@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 251, 218);
+  font-family: "Crimson Pro", serif;
+}
+
+.navbar {
+  background-color: rgb(255, 251, 218);
+}
+.navbar .navbar-brand {
+  text-decoration: none;
+}
+.navbar .navbar-brand .nav-logo {
+  width: 150px;
+  height: 200px;
+}
+.navbar .navbar-brand .logo-text {
+  color: rgb(53, 53, 53);
+  font-size: 50px;
+}
+.navbar .navbar-brand .span-logo {
+  color: rgb(232, 183, 61);
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */

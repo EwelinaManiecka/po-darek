@@ -1,0 +1,34 @@
+@use "./colors" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: $lightColor;
+  font-family: "Crimson Pro", serif;
+}
+
+// font-family: 'Cinzel', serif;
+
+.navbar {
+  background-color: $lightColor;
+
+  .navbar-brand {
+    // background-color: white;
+    text-decoration: none;
+
+    .nav-logo {
+      width: 150px;
+      height: 200px;
+    }
+
+    .logo-text {
+      color: $dark;
+      font-size: 50px;
+    }
+
+    .span-logo {
+      color: $mainColor;
+      font-weight: 700;
+    }
+  }
+}
