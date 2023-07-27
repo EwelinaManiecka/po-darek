@@ -11,6 +11,7 @@
 }
 .navbar .navbar-brand {
   text-decoration: none;
+  display: contents;
 }
 .navbar .navbar-brand .nav-logo {
   width: 150px;
