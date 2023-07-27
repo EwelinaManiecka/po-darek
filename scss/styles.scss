@@ -11,9 +11,9 @@
 
 .navbar {
   background-color: $lightColor;
+  font-size: 30px;
 
   .navbar-brand {
-    // background-color: white;
     text-decoration: none;
 
     .nav-logo {
@@ -23,12 +23,18 @@
 
     .logo-text {
       color: $dark;
-      font-size: 50px;
-    }
+      font-size: 30px;
 
-    .span-logo {
-      color: $mainColor;
-      font-weight: 700;
+      .span-text {
+        color: $mainColor;
+        font-weight: 700;
+      }
     }
   }
+}
+
+.button-color {
+  background-image: $buttonColor;
+  width: 300px;
+  height: 400px;
 }
