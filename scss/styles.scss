@@ -1,5 +1,8 @@
 @use "./colors" as *;
 
+// font-family: 'Cinzel', serif;
+// font-family: 'Crimson Pro', serif;
+
 * {
   margin: 0;
   padding: 0;
@@ -91,6 +94,18 @@ header.hero-img {
 
   h1 {
     color: $lightColor;
+  }
+}
+
+.aboutme {
+  .icons {
+    width: 80px;
+  }
+
+  .card-text {
+    text-transform: uppercase;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
   }
 }
 
