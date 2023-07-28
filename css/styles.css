@@ -17,6 +17,7 @@
 
 .span-text {
   color: rgb(230, 5, 5);
+  font-weight: bold;
 }
 
 nav {
@@ -59,7 +60,7 @@ nav .nav-link:hover {
 }
 
 header.hero-img {
-  background-image: linear-gradient(rgba(59, 61, 66, 0.1), rgba(24, 24, 24, 0.9)), url("../img/bees-small-next.jpg");
+  background-image: linear-gradient(rgba(59, 61, 66, 0.6), rgba(24, 24, 24, 0.9)), url("../img/bees-small-next.jpg");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -71,7 +72,7 @@ header.hero-img {
 header.hero-img .hero-text {
   text-transform: uppercase;
   position: relative;
-  top: 300px;
+  top: 400px;
 }
 header.hero-img h1 {
   color: rgb(246, 244, 220);
@@ -87,7 +88,7 @@ header.hero-img h1 {
     display: block;
   }
   .hero-img {
-    background-image: linear-gradient(rgba(59, 61, 66, 0.1), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
+    background-image: linear-gradient(rgba(59, 61, 66, 0.6), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
   }
 }
 @media (min-width: 992px) {
@@ -97,5 +98,11 @@ header.hero-img h1 {
   nav .navbar-nav {
     font-size: 18px;
     padding-right: 50px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header .hero-text {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=styles.css.map */

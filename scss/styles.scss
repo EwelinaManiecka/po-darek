@@ -19,6 +19,7 @@
 
 .span-text {
   color: $spanColor;
+  font-weight: bold;
 }
 
 nav {
@@ -81,7 +82,7 @@ header.hero-img {
   .hero-text {
     text-transform: uppercase;
     position: relative;
-    top: 300px;
+    top: 400px;
   }
 
   h1 {
@@ -113,6 +114,15 @@ header.hero-img {
     .navbar-nav {
       font-size: 18px;
       padding-right: 50px;
+    }
+  }
+
+  header {
+    h1 {
+      font-size: 35px;
+    }
+    .hero-text {
+      font-size: 26px;
     }
   }
 }
