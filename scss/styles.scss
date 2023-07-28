@@ -79,7 +79,8 @@ header.hero-img {
   color: $lightColor;
 
   .hero-text {
-    position: absolute;
+    text-transform: uppercase;
+    position: relative;
     top: 300px;
   }
 

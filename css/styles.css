@@ -69,7 +69,8 @@ header.hero-img {
   color: rgb(246, 244, 220);
 }
 header.hero-img .hero-text {
-  position: absolute;
+  text-transform: uppercase;
+  position: relative;
   top: 300px;
 }
 header.hero-img h1 {
