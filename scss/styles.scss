@@ -7,8 +7,12 @@
   font-family: "Crimson Pro", serif;
 }
 
-.dark-section {
+.background-dark {
   background-color: $dark;
+}
+
+.background-light {
+  background-color: $mainColor;
 }
 
 .shadow-bg {

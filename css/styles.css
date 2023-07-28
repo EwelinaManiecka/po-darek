@@ -5,8 +5,12 @@
   font-family: "Crimson Pro", serif;
 }
 
-.dark-section {
+.background-dark {
   background-color: rgb(53, 53, 53);
+}
+
+.background-light {
+  background-color: rgb(248, 186, 62);
 }
 
 .shadow-bg {
