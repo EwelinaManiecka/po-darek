@@ -5,89 +5,73 @@
   font-family: "Crimson Pro", serif;
 }
 
-nav {
-  z-index: 10;
-}
-
 .dark-section {
   background-color: rgb(53, 53, 53);
-  position: fixed;
 }
 
-.navbar {
+.bg-color {
   background-color: rgb(53, 53, 53);
+}
+
+nav {
+  background-color: rgb(53, 53, 53);
+  text-transform: uppercase;
+  color: rgb(246, 244, 220);
+  z-index: 10;
+  font-size: 26px;
+  width: 100%;
+}
+nav .container {
+  background-color: rgb(53, 53, 53);
+}
+nav .navbar-brand {
+  background-color: rgb(53, 53, 53);
+}
+nav .navbar-nav {
+  background-color: rgb(53, 53, 53);
+}
+nav .nav-color {
+  color: rgb(246, 244, 220);
+}
+nav img {
+  width: 200px;
+  background-color: rgb(53, 53, 53);
+}
+nav .logo-text {
+  background-color: rgb(53, 53, 53);
+  color: rgb(246, 244, 220);
+  font-weight: bold;
   font-size: 30px;
-  height: 135px;
 }
-.navbar .container {
-  display: contents;
-}
-.navbar .nav-logo {
+nav .span-text {
   background-color: rgb(53, 53, 53);
-  width: 150px;
-  position: fixed;
-  top: 20px;
+  color: rgb(230, 5, 5);
 }
-.navbar .navbar-brand {
-  text-decoration: none;
-  background-color: rgb(53, 53, 53);
-}
-.navbar .logo-text {
+nav .logo-text,
+nav .span-text {
   display: none;
 }
-.navbar i {
-  display: block;
-  width: 50px;
+nav i {
   background-color: rgb(53, 53, 53);
   color: rgb(246, 244, 220);
-}
-.navbar .navbar-toggler {
-  display: block;
-}
-.navbar .navbar-collapse {
-  background-color: rgb(53, 53, 53);
-}
-.navbar .navbar-nav {
-  background-color: rgb(53, 53, 53);
-}
-.navbar .nav-link {
-  color: rgb(246, 244, 220);
-  display: flex;
-  align-items: end;
-  justify-content: end;
-}
-
-.first-section {
-  background-image: url("../img/bees-small.jpg");
+  font-size: 30px;
 }
 
 @media (min-width: 768px) {
-  .navbar {
+  nav .navbar-brand {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
-  .navbar-brand {
-    display: none;
-  }
-  .nav-logo {
-    position: fixed;
-    background-color: rgb(53, 53, 53);
-    height: 98px;
-    top: 20px;
-    left: 30px;
-  }
-  .logo-text {
+  nav .logo-text,
+  nav .span-text {
     display: block;
-    position: relative;
-    color: rgb(246, 244, 220);
-    font-size: 30px;
-    background-color: rgb(53, 53, 53);
-    text-transform: uppercase;
   }
-  .logo-text .span-text {
-    color: rgb(230, 5, 5);
-    font-weight: 700;
-    background-color: rgb(53, 53, 53);
+}
+@media (min-width: 992px) {
+  nav {
+    font-size: 22px;
+  }
+  nav .navbar-nav {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=styles.css.map */

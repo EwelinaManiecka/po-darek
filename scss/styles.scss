@@ -3,57 +3,31 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: $beeColor;
+  background-color: $mainColor;
   font-family: "Crimson Pro", serif;
-}
-
-nav {
-  z-index: 10;
 }
 
 .dark-section {
   background-color: $dark;
-  position: fixed;
 }
-// font-family: 'Cinzel', serif;
 
-.navbar {
+.bg-color {
   background-color: $dark;
-  font-size: 30px;
-  height: 135px;
+}
+
+nav {
+  background-color: $dark;
+  text-transform: uppercase;
+  color: $lightColor;
+  z-index: 10;
+  font-size: 26px;
+  width: 100%;
 
   .container {
-    display: contents;
-  }
-
-  .nav-logo {
     background-color: $dark;
-    width: 150px;
-    position: fixed;
-    top: 20px;
   }
 
   .navbar-brand {
-    text-decoration: none;
-    background-color: $dark;
-  }
-
-  .logo-text {
-    display: none;
-  }
-
-  i {
-    display: block;
-    width: 50px;
-    background-color: $dark;
-    color: $lightColor;
-  }
-
-  .navbar-toggler {
-    display: block;
-  }
-
-  .navbar-collapse {
     background-color: $dark;
   }
 
@@ -61,49 +35,58 @@ nav {
     background-color: $dark;
   }
 
-  .nav-link {
+  .nav-color {
     color: $lightColor;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-  }
-}
-
-.first-section {
-  background-image: url("../img/bees-small.jpg");
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .navbar-brand {
-    display: none;
-  }
-
-  .nav-logo {
-    position: fixed;
+  img {
+    width: 200px;
     background-color: $dark;
-    height: 98px;
-    top: 20px;
-    left: 30px;
   }
 
   .logo-text {
-    display: block;
-    position: relative;
+    background-color: $dark;
+    color: $lightColor;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .span-text {
+    background-color: $dark;
+    color: $spanColor;
+  }
+
+  .logo-text,
+  .span-text {
+    display: none;
+  }
+
+  i {
+    background-color: $dark;
     color: $lightColor;
     font-size: 30px;
-    background-color: $dark;
-    text-transform: uppercase;
+  }
+}
 
+@media (min-width: 768px) {
+  nav {
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .logo-text,
     .span-text {
-      color: $mainColor;
-      font-weight: 700;
-      background-color: $dark;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    font-size: 22px;
+
+    .navbar-nav {
+      font-size: 18px;
     }
   }
 }
