@@ -7,8 +7,13 @@
   font-family: "Crimson Pro", serif;
 }
 
+nav {
+  z-index: 10;
+}
+
 .dark-section {
   background-color: $dark;
+  position: fixed;
 }
 // font-family: 'Cinzel', serif;
 
@@ -17,41 +22,88 @@
   font-size: 30px;
   height: 135px;
 
+  .container {
+    display: contents;
+  }
+
+  .nav-logo {
+    background-color: $dark;
+    width: 150px;
+    position: fixed;
+    top: 20px;
+  }
+
   .navbar-brand {
     text-decoration: none;
-    display: contents;
     background-color: $dark;
+  }
 
-    .nav-logo {
-      width: 150px;
-      height: 120px;
-      position: fixed;
-      background-color: $dark;
-    }
+  .logo-text {
+    display: none;
+  }
 
-    .logo-text {
-      position: relative;
-      left: 125px;
-      color: $lightColor;
-      font-size: 30px;
-      background-color: $dark;
+  i {
+    display: block;
+    width: 50px;
+    background-color: $dark;
+    color: $lightColor;
+  }
 
-      .span-text {
-        color: $mainColor;
-        font-weight: 700;
-        background-color: $dark;
-      }
-    }
+  .navbar-toggler {
+    display: block;
   }
 
   .navbar-collapse {
     background-color: $dark;
   }
+
   .navbar-nav {
     background-color: $dark;
   }
 
   .nav-link {
     color: $lightColor;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+}
+
+.first-section {
+  background-image: url("../img/bees-small.jpg");
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .nav-logo {
+    position: fixed;
+    background-color: $dark;
+    height: 98px;
+    top: 20px;
+    left: 30px;
+  }
+
+  .logo-text {
+    display: block;
+    position: relative;
+    color: $lightColor;
+    font-size: 30px;
+    background-color: $dark;
+    text-transform: uppercase;
+
+    .span-text {
+      color: $mainColor;
+      font-weight: 700;
+      background-color: $dark;
+    }
   }
 }
