@@ -15,6 +15,11 @@
   background-color: $dark;
 }
 
+.shadow-bg {
+  background-color: $dark;
+  transition: 0.6s;
+}
+
 nav {
   background-color: $dark;
   text-transform: uppercase;
@@ -25,6 +30,10 @@ nav {
 
   .container {
     background-color: $dark;
+  }
+
+  .navbar {
+    opacity: 0.2;
   }
 
   .navbar-brand {
@@ -68,6 +77,16 @@ nav {
   }
 }
 
+.hero-img {
+  background-image: $heroGradient, url("../img/bees-small-next.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  z-index: 0;
+  color: $lightColor;
+}
+
 @media (min-width: 768px) {
   nav {
     .navbar-brand {
@@ -88,5 +107,9 @@ nav {
     .navbar-nav {
       font-size: 18px;
     }
+  }
+
+  .hero-img {
+    background-image: $heroGradient, url("../img/bees-big-next.jpg");
   }
 }

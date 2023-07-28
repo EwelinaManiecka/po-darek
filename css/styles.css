@@ -13,6 +13,11 @@
   background-color: rgb(53, 53, 53);
 }
 
+.shadow-bg {
+  background-color: rgb(53, 53, 53);
+  transition: 0.6s;
+}
+
 nav {
   background-color: rgb(53, 53, 53);
   text-transform: uppercase;
@@ -23,6 +28,9 @@ nav {
 }
 nav .container {
   background-color: rgb(53, 53, 53);
+}
+nav .navbar {
+  opacity: 0.2;
 }
 nav .navbar-brand {
   background-color: rgb(53, 53, 53);
@@ -57,6 +65,16 @@ nav i {
   font-size: 30px;
 }
 
+.hero-img {
+  background-image: linear-gradient(rgba(59, 61, 66, 0.1), rgba(24, 24, 24, 0.9)), url("../img/bees-small-next.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  z-index: 0;
+  color: rgb(246, 244, 220);
+}
+
 @media (min-width: 768px) {
   nav .navbar-brand {
     display: flex;
@@ -73,5 +91,8 @@ nav i {
   }
   nav .navbar-nav {
     font-size: 18px;
+  }
+  .hero-img {
+    background-image: linear-gradient(rgba(59, 61, 66, 0.1), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
   }
 }/*# sourceMappingURL=styles.css.map */
