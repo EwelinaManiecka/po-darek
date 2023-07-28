@@ -116,6 +116,25 @@ header.hero-img {
   }
 }
 
+.aboutme-hero {
+  background-image: url("../img/hummel-small.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: $lightColor;
+  z-index: 1;
+
+  .aboutme-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -5;
+  }
+}
+
 @media (min-width: 768px) {
   nav {
     .navbar-brand {
