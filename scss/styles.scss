@@ -146,6 +146,15 @@ header.hero-img {
   .aboutme-undertext {
     font-size: 20px;
   }
+
+  .aboutme-hover {
+    color: $lightColor;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $mainColor;
+    }
+  }
 }
 
 @media (min-width: 768px) {
