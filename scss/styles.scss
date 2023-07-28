@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: $mainColor;
+  background: transparent;
   font-family: "Crimson Pro", serif;
 }
 
@@ -11,58 +11,42 @@
   background-color: $dark;
 }
 
-.bg-color {
-  background-color: $dark;
-}
-
 .shadow-bg {
   background-color: $dark;
   transition: 0.6s;
+  background: transparent;
+}
+
+.span-text {
+  color: $spanColor;
 }
 
 nav {
-  background-color: $dark;
+  background: $navGradient;
   text-transform: uppercase;
   color: $lightColor;
   z-index: 10;
   font-size: 26px;
-  width: 100%;
+  width: 100vh;
 
   .container {
-    background-color: $dark;
+    background: $navGradient;
+    margin: 0;
+    min-width: 100%;
   }
 
-  .navbar {
-    opacity: 0.2;
-  }
-
-  .navbar-brand {
-    background-color: $dark;
-  }
-
-  .navbar-nav {
-    background-color: $dark;
-  }
-
-  .nav-color {
-    color: $lightColor;
+  .nav-transparent {
+    background: $navGradient;
   }
 
   img {
     width: 200px;
-    background-color: $dark;
   }
 
   .logo-text {
-    background-color: $dark;
     color: $lightColor;
     font-weight: bold;
     font-size: 30px;
-  }
-
-  .span-text {
-    background-color: $dark;
-    color: $spanColor;
   }
 
   .logo-text,
@@ -71,20 +55,37 @@ nav {
   }
 
   i {
-    background-color: $dark;
     color: $lightColor;
     font-size: 30px;
   }
+
+  .nav-link {
+    color: $lightColor;
+  }
+
+  .nav-link:hover {
+    color: $mainColor;
+  }
 }
 
-.hero-img {
+header.hero-img {
   background-image: $heroGradient, url("../img/bees-small-next.jpg");
   position: relative;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 70vh;
   z-index: 0;
   color: $lightColor;
+
+  .hero-text {
+    position: absolute;
+    top: 300px;
+  }
+
+  h1 {
+    color: $lightColor;
+  }
 }
 
 @media (min-width: 768px) {
@@ -98,6 +99,10 @@ nav {
       display: block;
     }
   }
+
+  .hero-img {
+    background-image: $heroGradient, url("../img/bees-big-next.jpg");
+  }
 }
 
 @media (min-width: 992px) {
@@ -106,10 +111,7 @@ nav {
 
     .navbar-nav {
       font-size: 18px;
+      padding-right: 50px;
     }
-  }
-
-  .hero-img {
-    background-image: $heroGradient, url("../img/bees-big-next.jpg");
   }
 }

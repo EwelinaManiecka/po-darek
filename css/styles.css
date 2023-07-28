@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(248, 186, 62);
+  background: transparent;
   font-family: "Crimson Pro", serif;
 }
 
@@ -9,69 +9,70 @@
   background-color: rgb(53, 53, 53);
 }
 
-.bg-color {
-  background-color: rgb(53, 53, 53);
-}
-
 .shadow-bg {
   background-color: rgb(53, 53, 53);
   transition: 0.6s;
+  background: transparent;
+}
+
+.span-text {
+  color: rgb(230, 5, 5);
 }
 
 nav {
-  background-color: rgb(53, 53, 53);
+  background: linear-gradient(rgba(59, 61, 66, 0.6), rgb(24, 24, 24));
   text-transform: uppercase;
   color: rgb(246, 244, 220);
   z-index: 10;
   font-size: 26px;
-  width: 100%;
+  width: 100vh;
 }
 nav .container {
-  background-color: rgb(53, 53, 53);
+  background: linear-gradient(rgba(59, 61, 66, 0.6), rgb(24, 24, 24));
+  margin: 0;
+  min-width: 100%;
 }
-nav .navbar {
-  opacity: 0.2;
-}
-nav .navbar-brand {
-  background-color: rgb(53, 53, 53);
-}
-nav .navbar-nav {
-  background-color: rgb(53, 53, 53);
-}
-nav .nav-color {
-  color: rgb(246, 244, 220);
+nav .nav-transparent {
+  background: linear-gradient(rgba(59, 61, 66, 0.6), rgb(24, 24, 24));
 }
 nav img {
   width: 200px;
-  background-color: rgb(53, 53, 53);
 }
 nav .logo-text {
-  background-color: rgb(53, 53, 53);
   color: rgb(246, 244, 220);
   font-weight: bold;
   font-size: 30px;
-}
-nav .span-text {
-  background-color: rgb(53, 53, 53);
-  color: rgb(230, 5, 5);
 }
 nav .logo-text,
 nav .span-text {
   display: none;
 }
 nav i {
-  background-color: rgb(53, 53, 53);
   color: rgb(246, 244, 220);
   font-size: 30px;
 }
+nav .nav-link {
+  color: rgb(246, 244, 220);
+}
+nav .nav-link:hover {
+  color: rgb(248, 186, 62);
+}
 
-.hero-img {
+header.hero-img {
   background-image: linear-gradient(rgba(59, 61, 66, 0.1), rgba(24, 24, 24, 0.9)), url("../img/bees-small-next.jpg");
   position: relative;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 70vh;
   z-index: 0;
+  color: rgb(246, 244, 220);
+}
+header.hero-img .hero-text {
+  position: absolute;
+  top: 300px;
+}
+header.hero-img h1 {
   color: rgb(246, 244, 220);
 }
 
@@ -84,6 +85,9 @@ nav i {
   nav .span-text {
     display: block;
   }
+  .hero-img {
+    background-image: linear-gradient(rgba(59, 61, 66, 0.1), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
+  }
 }
 @media (min-width: 992px) {
   nav {
@@ -91,8 +95,6 @@ nav i {
   }
   nav .navbar-nav {
     font-size: 18px;
-  }
-  .hero-img {
-    background-image: linear-gradient(rgba(59, 61, 66, 0.1), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
+    padding-right: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
