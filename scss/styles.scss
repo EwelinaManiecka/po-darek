@@ -3,43 +3,55 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: $lightColor;
+  background-color: $beeColor;
   font-family: "Crimson Pro", serif;
 }
 
+.dark-section {
+  background-color: $dark;
+}
 // font-family: 'Cinzel', serif;
 
 .navbar {
-  background-color: $lightColor;
+  background-color: $dark;
   font-size: 30px;
+  height: 135px;
 
   .navbar-brand {
     text-decoration: none;
     display: contents;
+    background-color: $dark;
 
     .nav-logo {
       width: 150px;
-      height: 200px;
+      height: 120px;
+      position: fixed;
+      background-color: $dark;
     }
 
     .logo-text {
-      color: $dark;
+      position: relative;
+      left: 125px;
+      color: $lightColor;
       font-size: 30px;
+      background-color: $dark;
 
       .span-text {
         color: $mainColor;
         font-weight: 700;
+        background-color: $dark;
       }
     }
   }
-}
 
-.button-color {
-  background-image: $buttonColor;
-  width: 300px;
-  height: 400px;
-}
+  .navbar-collapse {
+    background-color: $dark;
+  }
+  .navbar-nav {
+    background-color: $dark;
+  }
 
-.section-color {
-  background: $sectionColor;
+  .nav-link {
+    color: $lightColor;
+  }
 }
