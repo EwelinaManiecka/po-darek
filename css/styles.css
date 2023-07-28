@@ -115,6 +115,16 @@ header.hero-img h1 {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -5;
 }
+.aboutme-hero .aboutme-title {
+  font-size: 26px;
+}
+.aboutme-hero i {
+  font-size: 3em;
+  padding-top: 10px;
+}
+.aboutme-hero .aboutme-undertext {
+  font-size: 20px;
+}
 
 @media (min-width: 768px) {
   nav .navbar-brand {
