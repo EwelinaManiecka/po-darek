@@ -144,7 +144,7 @@ header.hero-img h1 {
 }
 
 .size-img {
-  height: 400px;
+  max-height: 300px;
 }
 
 .carousel-title {
@@ -198,8 +198,11 @@ header.hero-img h1 {
   .hero-img {
     background-image: linear-gradient(rgba(59, 61, 66, 0.6), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
   }
+  .hobby-card {
+    width: 300px;
+  }
   .size-img {
-    height: 450px;
+    height: 250px;
   }
 }
 @media (min-width: 992px) {
