@@ -199,7 +199,7 @@ header.hero-img h1 {
     background-image: linear-gradient(rgba(59, 61, 66, 0.6), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
   }
   .size-img {
-    height: 500px;
+    height: 450px;
   }
 }
 @media (min-width: 992px) {
