@@ -229,6 +229,6 @@ header.hero-img h1 {
     font-size: 26px;
   }
   .size-img {
-    height: 600px;
+    min-height: 500px;
   }
 }/*# sourceMappingURL=styles.css.map */
