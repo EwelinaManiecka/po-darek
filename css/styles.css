@@ -31,7 +31,7 @@
 }
 
 nav {
-  background: linear-gradient(rgba(59, 61, 66, 0), rgb(24, 24, 24));
+  background: linear-gradient(rgba(59, 61, 66, 0.6), rgb(24, 24, 24));
   text-transform: uppercase;
   color: rgb(246, 244, 220);
   z-index: 10;
@@ -39,12 +39,12 @@ nav {
   width: 100vh;
 }
 nav .container {
-  background: linear-gradient(rgba(59, 61, 66, 0), rgb(24, 24, 24));
+  background: linear-gradient(rgba(59, 61, 66, 0.6), rgb(24, 24, 24));
   margin: 0;
   min-width: 100%;
 }
 nav .nav-transparent {
-  background: linear-gradient(rgba(59, 61, 66, 0), rgb(24, 24, 24));
+  background: linear-gradient(rgba(59, 61, 66, 0.6), rgb(24, 24, 24));
 }
 nav img {
   width: 200px;
