@@ -160,6 +160,9 @@ header.hero-img {
 .hobby {
   .hobby-card {
     box-shadow: 0 3px 10px rgb(53, 53, 53);
+    max-width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -232,7 +235,7 @@ header.hero-img {
   }
 
   .hobby-card {
-    width: 300px;
+    min-width: 320px;
   }
 
   .size-img {

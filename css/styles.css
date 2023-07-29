@@ -135,6 +135,9 @@ header.hero-img h1 {
 
 .hobby .hobby-card {
   box-shadow: 0 3px 10px rgb(53, 53, 53);
+  max-width: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .frame {
@@ -199,7 +202,7 @@ header.hero-img h1 {
     background-image: linear-gradient(rgba(59, 61, 66, 0.6), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
   }
   .hobby-card {
-    width: 300px;
+    min-width: 320px;
   }
   .size-img {
     height: 250px;
