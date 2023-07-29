@@ -167,8 +167,10 @@ header.hero-img {
   border: #000;
   border-style: solid;
   border-radius: 5px;
-  min-width: 500px;
-  min-height: 380px;
+}
+
+.size-img {
+  height: 400px;
 }
 
 .carousel-title {
@@ -228,6 +230,10 @@ header.hero-img {
   .hero-img {
     background-image: $heroGradient, url("../img/bees-big-next.jpg");
   }
+
+  .size-img {
+    height: 500px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -255,5 +261,9 @@ header.hero-img {
 
   .carousel-text {
     font-size: 26px;
+  }
+
+  .size-img {
+    height: 600px;
   }
 }
