@@ -175,7 +175,7 @@ header.hero-img h1 {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 25px solid red;
+  border-bottom: 25px solid yellow;
 }
 .hexagon::after {
   content: "";
@@ -186,7 +186,7 @@ header.hero-img h1 {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 25px solid red;
+  border-top: 25px solid yellow;
 }
 
 @media (min-width: 768px) {
