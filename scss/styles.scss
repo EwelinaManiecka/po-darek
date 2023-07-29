@@ -157,6 +157,37 @@ header.hero-img {
   }
 }
 
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: #000;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid red;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid red;
+  }
+}
+
 @media (min-width: 768px) {
   nav {
     .navbar-brand {
