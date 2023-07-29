@@ -137,6 +137,24 @@ header.hero-img h1 {
   box-shadow: 0 3px 10px rgb(53, 53, 53);
 }
 
+.frame {
+  border: #000;
+  border-style: solid;
+  border-radius: 5px;
+  min-width: 500px;
+  min-height: 380px;
+}
+
+.carousel-title {
+  padding: 10px;
+  margin: 0;
+}
+
+.carousel-text {
+  padding: 10px;
+  margin: 0;
+}
+
 .hexagon {
   width: 100px;
   height: 55px;
@@ -191,6 +209,12 @@ header.hero-img h1 {
     font-size: 35px;
   }
   header .hero-text {
+    font-size: 26px;
+  }
+  .carousel-title {
+    font-size: 30px;
+  }
+  .carousel-text {
     font-size: 26px;
   }
 }/*# sourceMappingURL=styles.css.map */

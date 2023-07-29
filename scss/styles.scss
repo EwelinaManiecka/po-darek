@@ -163,6 +163,24 @@ header.hero-img {
   }
 }
 
+.frame {
+  border: #000;
+  border-style: solid;
+  border-radius: 5px;
+  min-width: 500px;
+  min-height: 380px;
+}
+
+.carousel-title {
+  padding: 10px;
+  margin: 0;
+}
+
+.carousel-text {
+  padding: 10px;
+  margin: 0;
+}
+
 // hexagon card with price
 .hexagon {
   width: 100px;
@@ -229,5 +247,13 @@ header.hero-img {
     .hero-text {
       font-size: 26px;
     }
+  }
+
+  .carousel-title {
+    font-size: 30px;
+  }
+
+  .carousel-text {
+    font-size: 26px;
   }
 }
