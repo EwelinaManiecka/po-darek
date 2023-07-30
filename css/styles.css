@@ -82,7 +82,11 @@ header.hero-img {
 header.hero-img .hero-text {
   text-transform: uppercase;
   position: relative;
-  top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 240px;
 }
 header.hero-img h1 {
   color: rgb(246, 244, 220);
