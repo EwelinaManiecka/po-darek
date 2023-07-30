@@ -194,7 +194,7 @@ header.hero-img {
 .hexagon {
   width: 200px;
   height: 110px;
-  background: #000;
+  background: $cubeColor;
   position: relative;
   transition: scale 0.6s;
 
@@ -207,85 +207,91 @@ header.hero-img {
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 50px solid yellow;
+    border-bottom: 50px solid $cubeColor;
   }
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -55px;
+    bottom: -50px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-top: 50px solid yellow;
+    border-top: 50px solid $cubeColor;
   }
 
-  // &:hover {
-  //   scale: 1.2;
-  // }
-}
-
-@media (min-width: 768px) {
-  nav {
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-    }
-    .logo-text,
-    .span-text {
-      display: block;
-    }
-  }
-
-  .hero-img {
-    background-image: $heroGradient, url("../img/bees-big-next.jpg");
-  }
-
-  .hobby-card {
-    min-width: 320px;
-  }
-
-  .size-img {
-    height: 250px;
+  &:hover {
+    scale: 1.2;
   }
 }
 
 .prices {
   color: $lightColor;
-  // .price-card {
-  // }
-}
 
-@media (min-width: 992px) {
-  nav {
-    font-size: 22px;
+  .price-card {
+    margin-top: 80px;
 
-    .navbar-nav {
-      font-size: 18px;
-      padding-right: 50px;
+    h5 {
+      padding-top: 15px;
     }
   }
 
-  header {
-    h1 {
-      font-size: 35px;
+  @media (min-width: 768px) {
+    nav {
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+      }
+      .logo-text,
+      .span-text {
+        display: block;
+      }
     }
-    .hero-text {
+
+    .hero-img {
+      background-image: $heroGradient, url("../img/bees-big-next.jpg");
+    }
+
+    .hobby-card {
+      min-width: 320px;
+    }
+
+    .size-img {
+      height: 250px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    nav {
+      font-size: 22px;
+
+      .navbar-nav {
+        font-size: 18px;
+        padding-right: 50px;
+      }
+    }
+
+    header {
+      h1 {
+        font-size: 35px;
+      }
+      .hero-text {
+        font-size: 26px;
+      }
+    }
+
+    .carousel-title {
+      font-size: 30px;
+    }
+
+    .carousel-text {
       font-size: 26px;
     }
-  }
 
-  .carousel-title {
-    font-size: 30px;
-  }
-
-  .carousel-text {
-    font-size: 26px;
-  }
-
-  .size-img {
-    min-height: 500px;
+    .size-img {
+      min-height: 500px;
+    }
   }
 }

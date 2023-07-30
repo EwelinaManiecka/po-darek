@@ -167,7 +167,7 @@ header.hero-img h1 {
 .hexagon {
   width: 200px;
   height: 110px;
-  background: #000;
+  background: rgb(95, 93, 85);
   position: relative;
   transition: scale 0.6s;
 }
@@ -180,64 +180,72 @@ header.hero-img h1 {
   height: 0;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
-  border-bottom: 50px solid yellow;
+  border-bottom: 50px solid rgb(95, 93, 85);
 }
 .hexagon::after {
   content: "";
   position: absolute;
-  bottom: -55px;
+  bottom: -50px;
   left: 0;
   width: 0;
   height: 0;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
-  border-top: 50px solid yellow;
+  border-top: 50px solid rgb(95, 93, 85);
+}
+.hexagon:hover {
+  scale: 1.2;
 }
 
-@media (min-width: 768px) {
-  nav .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
-  nav .logo-text,
-  nav .span-text {
-    display: block;
-  }
-  .hero-img {
-    background-image: linear-gradient(rgba(59, 61, 66, 0.6), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
-  }
-  .hobby-card {
-    min-width: 320px;
-  }
-  .size-img {
-    height: 250px;
-  }
-}
 .prices {
   color: rgb(246, 244, 220);
 }
-
+.prices .price-card {
+  margin-top: 80px;
+}
+.prices .price-card h5 {
+  padding-top: 15px;
+}
+@media (min-width: 768px) {
+  .prices nav .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .prices nav .logo-text,
+  .prices nav .span-text {
+    display: block;
+  }
+  .prices .hero-img {
+    background-image: linear-gradient(rgba(59, 61, 66, 0.6), rgba(24, 24, 24, 0.9)), url("../img/bees-big-next.jpg");
+  }
+  .prices .hobby-card {
+    min-width: 320px;
+  }
+  .prices .size-img {
+    height: 250px;
+  }
+}
 @media (min-width: 992px) {
-  nav {
+  .prices nav {
     font-size: 22px;
   }
-  nav .navbar-nav {
+  .prices nav .navbar-nav {
     font-size: 18px;
     padding-right: 50px;
   }
-  header h1 {
+  .prices header h1 {
     font-size: 35px;
   }
-  header .hero-text {
+  .prices header .hero-text {
     font-size: 26px;
   }
-  .carousel-title {
+  .prices .carousel-title {
     font-size: 30px;
   }
-  .carousel-text {
+  .prices .carousel-text {
     font-size: 26px;
   }
-  .size-img {
+  .prices .size-img {
     min-height: 500px;
   }
 }/*# sourceMappingURL=styles.css.map */
