@@ -192,34 +192,39 @@ header.hero-img {
 
 // hexagon card with price
 .hexagon {
-  width: 100px;
-  height: 55px;
+  width: 200px;
+  height: 110px;
   background: #000;
   position: relative;
+  transition: scale 0.6s;
 
   &::before {
     content: "";
     position: absolute;
-    top: -25px;
+    top: -50px;
     left: 0;
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid yellow;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid yellow;
   }
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -25px;
+    bottom: -55px;
     left: 0;
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid yellow;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 50px solid yellow;
   }
+
+  // &:hover {
+  //   scale: 1.2;
+  // }
 }
 
 @media (min-width: 768px) {
@@ -245,6 +250,12 @@ header.hero-img {
   .size-img {
     height: 250px;
   }
+}
+
+.prices {
+  color: $lightColor;
+  // .price-card {
+  // }
 }
 
 @media (min-width: 992px) {

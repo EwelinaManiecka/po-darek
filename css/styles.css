@@ -165,32 +165,33 @@ header.hero-img h1 {
 }
 
 .hexagon {
-  width: 100px;
-  height: 55px;
+  width: 200px;
+  height: 110px;
   background: #000;
   position: relative;
+  transition: scale 0.6s;
 }
 .hexagon::before {
   content: "";
   position: absolute;
-  top: -25px;
+  top: -50px;
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid yellow;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 50px solid yellow;
 }
 .hexagon::after {
   content: "";
   position: absolute;
-  bottom: -25px;
+  bottom: -55px;
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid yellow;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 50px solid yellow;
 }
 
 @media (min-width: 768px) {
@@ -212,6 +213,10 @@ header.hero-img h1 {
     height: 250px;
   }
 }
+.prices {
+  color: rgb(246, 244, 220);
+}
+
 @media (min-width: 992px) {
   nav {
     font-size: 22px;
